@@ -1,0 +1,141 @@
+/* common css */
+body{
+    margin: 0;
+}
+main{
+    padding: 0 120px;
+}
+section{
+    margin-top: 100px;
+}
+/* header area */
+header{
+    background-image: url(./images/banner/banner2.png);
+    padding: 100px 120px;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+h1.banner-title {
+    font-size: 50px;
+}
+button.banner-btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightcoral;
+}
+/* main area */
+/* about me */
+section.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+section.about-me ul {
+    margin: 0;
+    padding: 0;
+}
+.about-me ul {
+    list-style: none;
+    text-align: left;
+}
+/* my plan */
+section.my-plan h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/* call to area */
+.call-to-area{
+    background-image: url(./images/gradient2.png), url(./images/watch.png);
+}
+section.call-to-area h1 {
+    font-size: 40px;
+    color: #fff;
+    text-align: left;
+}
+
+button.call-to-btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightgray;
+    font-size: 20px
+}
+
+section.call-to-area {
+    padding: 30px 25px;
+}
+/* footer area */
+footer {
+    display: flex;
+    margin-top: 50px;
+    gap: 70px;
+    background-color: black;
+    color: #fff;
+    padding: 50px 120px;
+}
+.footer-info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-info img {
+    margin-top: 20px;
+}
+
+ul  {
+    list-style: none;
+    text-align: left;
+    margin: 10px 0; 
+}
+
+input[type="email"] {
+    width: 100%;
+    border-color: #fff;
+    background-color: black;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightcoral;
+}
+/* media queries */
+@media (max-width:767.98px){
+    header{
+        padding: 30px;
+        text-align: center;   
+        background-position: left;
+        color: #fff;
+    }
+    h1.banner-title {
+        font-size: 30px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    section{
+        margin-top: 40px;
+    }
+    .about-me, .skills, footer {
+    flex-direction: column;
+    }
+    
+    .about-me img{
+        width: 100%;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
